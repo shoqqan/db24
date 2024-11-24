@@ -56,7 +56,7 @@ CREATE OR REPLACE FUNCTION random_between(low INT, high INT)
 RETURN random() * (high - low) + low;
 
 INSERT INTO cats (cat_id, name, age, breed, weight, adopted)
-VALUES (6, 'Amaka', 4, 'lol', random_between(3, 7), false);
+VALUES (6, 'Sasaka', 4, 'lol ', random_between(3, 7), false);
 
 SELECT *
 FROM cats
